@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>登陆|注册</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+    <script src="js/modernizr.js">
+  
+    </script>
+
+</head>
+
+<body>
+<div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+  <section class='container'>
+  	
+  <!--<img src="img/9-zonelogo-2.png" />-->
+  <!-- / Form -->
+  <form >
+    <!-- / Header -->
+    
+    
+    <!-- / Fieldset Alpha -->
+    <fieldset class='alpha'>
+    	<p align="center"><img src="img/9-zonelogo.png" width="200px" align="bottom"/></p>
+      <legend align="center"><b><font size="5">注册账号</font></b></legend>
+      
+      <!--用户名-->
+      <div class='frow'>
+        <input class='item' placeholder='用户名' type='text' id="username" onfocus="usr_tip()" oninput="usr_tip()" onblur="close_usr_tip()">
+      </div>
+			<div class="frow">
+				<span id="usr_config" style="font-size: 12px;"></span>
+			</div>
+    	</div>
+    	
+    	<!--手机号码-->
+      <div class='frow'>
+        <input class='item' placeholder='手机号码' type='phone' id="phone" onfocus="phone_tip()" oninput="phone_tip()" onblur="close_phone_tip()">
+      </div>
+      <div class="frow">
+				<span id="phone_config" style="font-size: 12px;"></span>
+			</div>
+			
+			<!--密码-->
+      <div class='frow'>
+        <input class='item' placeholder='密码' type='password' id="password" onfocus="pwd_tip()" oninput="pwd_tip()" onblur="close_pwd_tip()">
+      </div>
+      <div class="frow">
+				<span id="pwd_config" style="font-size: 12px;"></span>
+			</div>
+      
+      
+      <!--确认密码-->
+      <div class='frow'>
+        <input class='item' placeholder='确认密码' type='password' id="password1" onfocus="pwd1_tip()" oninput="pwd1_tip()" onblur="close_pwd1_tip()">
+      </div>
+      <div class="frow">
+				<span id="pwd1_config" style="font-size: 12px;"></span>
+			</div>
+			
+			
+      <div class='frow'>
+        <!--<a class='next-step' href='#' style="font-family: 'Ping Hei Light';">注&nbsp;&nbsp;&nbsp;册</a>-->
+        <input type="button" value="注册" onclick="check()"/>
+      </div>
+      <div class="wrap">
+      	<div class="left">
+      		<input name="remember" type="checkbox" value="1" style="width: auto;"/>
+				  <label for="remember">我已阅读并同意</label>
+      	</div>
+      	<div class="right">
+      		<a href="" style="text-decoration: none;color: #5EB979;">《轻食用户注册协议》</a>
+      	</div>
+      </div>
+    </fieldset>
+    <script type="text/javascript">
+    	//用户名
+    	function usr_tip(){
+    		var username=document.getElementById("username");
+    		var usr_config=document.getElementById("usr_config");
+    		if(username.value==""){
+    			usr_config.style.color="gray";
+    			usr_config.innerHTML = "支持汉字、字母、数字、“-”“_”的组合，4-20个字符";	
+    		}else if(username.value.length<4){
+						//alert("用户名过短！");
+						usr_config.style.color="red";
+						usr_config.innerHTML = "支持汉字、字母、数字、“-”“_”的组合，4-20个字符";
+						return false;
+					}else if(username.value.length<12){
+			    		usr_config.style.color="green";
+			    		usr_config.innerHTML = "格式正确";
+			    		return false;
+			    	}else{
+									usr_config.style.color="red";
+									usr_config.innerHTML = "支持汉字、字母、数字、“-”“_”的组合，4-20个字符";
+									return false;  
+								}
+    		
+    	}
+    	
+    	function close_usr_tip(){
+    		var usr_config=document.getElementById("usr_config");
+    		usr_config.innerHTML = "";
+    	}
+    	
+    	//手机号码
+    	function phone_tip(){
+    		var phone=document.getElementById("phone");
+    		var phone_config=document.getElementById("phone_config");
+    		if(phone.value==""){
+    			phone_config.style.color="gray";
+    			phone_config.innerHTML = "请输入您的手机号";	
+    		}else if(!/^1[3|4|5|7|8][0-9]{9}$/.test(phone.value)) {  
+						phone_config.style.color="red";
+						phone_config.innerHTML = "格式不正确";
+						return false;  
+					}else{
+    		phone_config.style.color="green";
+    		phone_config.innerHTML = "可用手机号";
+    	}
+    	}
+    	
+    	function close_phone_tip(){
+    		var phone_config=document.getElementById("phone_config");
+    		phone_config.innerHTML = "";
+    	}
+    	
+    	
+    	//密码
+    	function pwd_tip(){
+    		var passwd=document.getElementById("password");
+    		var pwd_config=document.getElementById("pwd_config");
+    		if(passwd.value==""){
+    			pwd_config.style.color="gray";
+    			pwd_config.innerHTML = "请输入密码4-12字符";	
+    		}else if(passwd.value.length<4){
+						pwd_config.style.color="red";
+						pwd_config.innerHTML = "请输入密码4-12字符";
+						return false;  
+					}else if(passwd.value.length<12){
+			    		pwd_config.style.color="green";
+			    		pwd_config.innerHTML = "格式正确";
+			    		return false;
+			    	}else{
+									pwd_config.style.color="red";
+									pwd_config.innerHTML = "请输入密码4-12字符";
+									return false;  
+								}
+    	}
+    	
+    	function close_pwd_tip(){
+    		var pwd_config=document.getElementById("pwd_config");
+    		pwd_config.innerHTML = "";
+    	}
+    	
+    	
+    	//确认密码
+    	function pwd1_tip(){
+    		var passwd=document.getElementById("password");
+    		var pwd_config=document.getElementById("pwd_config");
+    		var passwd1=document.getElementById("password1");
+    		var pwd1_config=document.getElementById("pwd1_config");
+    		if(passwd1.value==""){
+    			pwd1_config.style.color="gray";
+    			pwd1_config.innerHTML = "请输入密码4-12字符";	
+    		}else if(passwd.value!=passwd1.value){
+						pwd1_config.style.color="red";
+						pwd1_config.innerHTML = "密码输入不相同，请再次输入";
+						return false;
+					} else{
+			    		pwd1_config.style.color="green";
+			    		pwd1_config.innerHTML = "密码相同";
+			    		return false;
+			    	}
+    	}
+    	
+    	
+    	function close_pwd1_tip(){
+    		var pwd1_config=document.getElementById("pwd1_config");
+    		pwd1_config.innerHTML = "";
+    	}
+    	
+	    function check(){
+					var usr_config=document.getElementById("usr_config");
+					var username=document.getElementById("username");
+					var phone=document.getElementById("phone");
+					var passwd=document.getElementById("password");
+					var passwd1=document.getElementById("password1");
+					if((username.value=='')||(phone.value=='')||(passwd.value=='')||(passwd1.value=='')){
+						alert("输入不能为空！");
+						return false;
+					}else if(username.value.length<4){
+						//alert("用户名过短！");
+						usr_config.innerHTML = "支持汉字、字母、数字、“-”“_”的组合，4-20个字符";
+						return false;
+					}
+					else if(username.value.length>20){
+						alert("用户名过长！");
+						return false;
+					}
+					else if(phone.value.length>20){
+						alert("手机号码格式不正确！");
+						return false;
+					}
+					else if(passwd.value.length<4){
+						alert("密码长度过短！");
+						return false;
+					}
+					else if(passwd.value.length>12){
+						alert("密码输入长度超出限制！");
+						return false;
+					}
+					else if(!/^[A-Za-z0-9]+$/.test(username.value)){
+						alert("用户名格式不正确！");
+						return false;
+					}
+					else if(!/^1[3|4|5|7|8][0-9]{9}$/.test(phone.value)) {  
+						alert("手机号码格式不正确！"); 
+						return false;
+					}
+					else if(!/^[A-Za-z0-9]+$/.test(passwd.value)){
+						alert("密码格式不正确！");  
+						return false;
+					}
+					else if(passwd.value!=passwd1.value){
+						alert("密码输入不相同，请再次输入！");
+						return false;
+					}
+					
+						window.location="register_success.html";
+					
+				}
+    </script>
+    
+  </form>
+</section>
+
+  <script src='js/jquery.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

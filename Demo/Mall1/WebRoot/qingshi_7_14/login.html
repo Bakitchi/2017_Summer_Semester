@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>登陆|注册</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script src="js/modernizr.js"></script>
+
+</head>
+	<body>
+	<script src="js/three.js" type="text/javascript"></script>
+	<script src="js/wallbgcanvas.js" type="text/javascript"></script>
+	
+
+
+		<section class='container'>
+		<div class="div-wrapper">
+		
+			<div id="wall-bg">
+				<!-- <span></span> -->
+				<canvas style="width: 1900px; height: 100%; position: absolute;top:-200px left:0px"></canvas>
+			</div>
+			
+			<form>
+				<fieldset class='alpha'>
+					<p align="center"><img src="img/9-zonelogo.png" width="200px" align="bottom"/></p>
+					<legend align="center"><b><font size="5">登录轻食</font></b></legend>
+						<div class='frow'>
+			        <input class='item' placeholder='用户名' type='text'>
+			      </div>
+			      <div class='frow'>
+			        <input class='item' placeholder='密码' type='password'>
+			      </div>
+			      <div class='frow'>
+				       <input class='submit' type='submit' value="登录" onclick="open_login()">
+				    </div>
+				    <div class="wrap">
+				    	<div class="left">
+				    		<input name="remember" type="radio" value="1" style="width: auto;"/>
+				    		<label for="remember">记住我</label>
+				    	</div>
+				    	<div class="right">
+				    		<a href="http://127.0.0.1:8020/lechun1/register.html" style="text-decoration: none;color: #5EB979;">现在注册</a>
+				    	</div>
+				    </div>
+				</fieldset>
+			</form>
+		</div>
+
+		</section>
+	</body>
+</html>

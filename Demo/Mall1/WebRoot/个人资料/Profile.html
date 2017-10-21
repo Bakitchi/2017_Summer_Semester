@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>轻食|我的轻食</title>
+<!-- load stylesheets -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+<link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+<link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+<link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+<link rel="stylesheet" href="css/button.css">                                   <!-- button style -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- <script type="text/javascript" src="./js/Profile.js"> -->
+<link rel="stylesheet" href="css/button.css">
+<link rel="stylesheet" href="css/myCart.css">
+<script type="text/javascript" src="./js/myCart.js"></script>
+</head>
+<body>        
+<div class="container">
+	<div class="row">
+		<div class="tm-left-right-container">
+			<!-- Left column: logo and menu -->
+			<div class="tm-blue-bg tm-left-column">                        
+				
+				<nav class="tm-main-nav">
+					<ul class="tm-main-nav-ul">
+						<li class="tm-nav-item">
+								<div class="tm-logo-div text-xs-center" onclick="window.location='../index.html'">
+									<img src="img/9-zonelogo.png" alt="Logo">
+								</div>
+						</li>
+						<li class="tm-nav-item">
+							<a href="#welcome" class="tm-nav-item-link" >个人资料</a>
+						</li>
+						<li class="tm-nav-item">
+							<a href="#galleryone" class="tm-nav-item-link">我的收藏</a>
+						</li>
+						<li class="tm-nav-item">
+							<a href="#secondgallery" class="tm-nav-item-link">购物车</a>
+						</li>
+						<li class="tm-nav-item">
+							<a href="#thirdgallery" class="tm-nav-item-link">我的订单</a>
+						</li>
+					</ul>
+				</nav>                                         
+			</div> <!-- Left column: logo and menu -->
+			<!-- Right column: content -->
+			<div class="tm-right-column">
+
+				<div class="tm-content-div">
+					<!-- Profile section -->
+					<div>
+					<section id="welcome" class="tm-section">
+						<header>
+							<h2 class="tm-blue-text tm-welcome-title">个人资料</h2>
+							<hr/>
+						</header>
+						<form action="#contact" method="post" class="contact-form">
+							<div class="form-group">
+								<h4 class="float-right hint">昵称<h4/>
+								<input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+							</div>
+							<div class="form-group hint">
+								<h4 class="float-right">电子邮箱<h4/>
+								<input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+							</div>
+							<div class="form-group hint">
+								<h4 class="float-right">个性签名<h4/>
+								<textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" ></textarea>
+							</div>
+
+							<button type="submit" class="float-right tm-button">保存</button>
+							<div class="form-group">
+								<hr/>
+								<h4 class="float-right hint">收货地址<h4/> <!-- <button type="button" class=" add-btn">+添加新地址</button> -->
+								
+								<div class="button_base b06_3d_swap add">
+       								 <div class="btn-div">+ 添加新地址</div>
+        							<div class="btn-div">+ 添加新地址</div>
+   								</div>
+
+								<div class="add-container" id="add-container">
+									<div class="show-add" id="add-1" onclick="setDftAdd()">
+										<p class="show-p">陕西西安(Tom收)</p>
+										<p class="show-p-2">碑林区 西安交通大学 13735683918</p>
+									</div>
+									<div class="show-add" id="add-2" onclick="setDftAdd()">
+										<p class="show-p">上海(Jimmy收)</p>
+										<p class="show-p-2">闵行区 上海交通大学 13735683918</p>
+									</div>
+									<div class="show-add" id="add-3" onclick="setDftAdd()">
+										<p class="show-p">北京(Andy收)</p>
+										<p class="show-p-2">朝阳区 朝阳小学 13735683918</p>
+									</div>
+									<div class="show-add" id="add-4" onclick="setDftAdd()">
+										<p class="show-p">重庆(爸爸收)</p>
+										<p class="show-p-2">XXXXXXXX 13735683918</p>
+									</div>
+
+								</div>                                                 
+							
+						
+					</section>
+		
+
+					<!-- Gallery One section -->     
+					<section id="galleryone" class="tm-section">
+						<header><h2 class="tm-blue-text tm-welcome-title" >我的收藏</h2><hr/></header>
+						
+						<div class="search" style="width: 600px;">
+        					<div class="search d7">
+								<form>
+		  							<input type="text" placeholder="搜索我的收藏...">
+		  							<button type="submit"></button>
+		  							<!-- <div class="button_base b06_3d_swap add btn-div-2">
+       								 	<div class="">搜索</div>
+        								<div class="">搜索</div>
+   									</div> -->
+								</form>
+							</div>
+        				</div>
+
+						<div class="tm-gallery-container tm-gallery-1" ">
+							<div class="tm-img-container tm-img-container-1">
+								<a href="img/s-芒果干.jpg"><img src="img/s-芒果干.jpg" alt="Image" class="img-fluid tm-img-tn"></a>
+								<p style="padding-right: 70%;color: red; font-weight: 800;font-family: 'Open Sans';">¥29.9</p>
+								<p style="text-align:left; line-height: 80%;width: 220px;"><a href="" class="dcname"><font color="#000000" style="text-decoration: none;font-size: 1rem;">【轻食-芒果干120gx3袋】休闲零食芒果片 蜜饯果脯水果干特产</font></a></p>
+								<div class="button_base b06_3d_swap-cancel ">
+       								 <div class="btn-div">取消收藏</div>
+        							<div class="btn-div">取消收藏</div>
+   								</div> 
+
+							</div>
+							<div class="tm-img-container tm-img-container-1">
+								<a href="img/s-草莓干.jpg"><img src="img/s-草莓干.jpg" alt="Image" class="img-fluid tm-img-tn"></a>
+								<p style="padding-right: 70%;color: red; font-weight: 800;font-family: 'Open Sans';">¥29.9</p>
+								<p style="text-align:left; line-height: 80%;width: 220px;"><a href="" class="dcname"><font color="#000000" style="text-decoration: none;font-size: 1rem;">轻食草莓干水果干新鲜蜜饯果干果脯办公室零食休闲食品小吃</font></a></p>
+								<div class="button_base b06_3d_swap-cancel ">
+       								 <div class="btn-div">取消收藏</div>
+        							<div class="btn-div">取消收藏</div>
+   								</div>     
+							</div>
+							<div class="tm-img-container tm-img-container-1">
+								<a href="img/s-椰子玫瑰味酸奶.jpg"><img src="img/s-椰子玫瑰味酸奶.jpg" alt="Image" class="img-fluid tm-img-tn"></a>
+								<p style="padding-right: 70%;color: red; font-weight: 800; font-family: 'Open Sans';">¥96</p>
+								<p style="text-align:left; line-height: 80%;width: 220px;"><a href="" class="dcname"><font color="#000000" style="text-decoration: none;font-size: 1rem;">【会员专享】乐纯滤乳清元气希腊酸奶6盒装椰子玫瑰 益生菌酸牛奶</font></a></p>
+								<div class="button_base b06_3d_swap-cancel ">
+       								 <div class="btn-div">取消收藏</div>
+        							<div class="btn-div">取消收藏</div>
+   								</div>     
+							</div>
+							<div class="tm-img-container tm-img-container-1">
+								<a href="img/s-猕猴桃干.jpg"><img src="img/s-猕猴桃干.jpg" alt="Image" class="img-fluid tm-img-tn"></a> 
+								<p style="padding-right: 70%;color: red; font-weight: 800;font-family: 'Open Sans';">¥19.8</p>
+								<p style="text-align:left; line-height: 80%; width: 220px;"><a href="" class="dcname"><font color="#000000" style="text-decoration: none;font-size: 1rem;">【轻食_猕猴桃干500g】奇异果干猕猴桃片水果干片蜜饯果脯零食</font></a></p>
+								<div class="button_base b06_3d_swap-cancel ">
+       								 <div class="btn-div">取消收藏</div>
+        							<div class="btn-div">取消收藏</div>
+   								</div>    
+							</div>
+							<div class="tm-img-container tm-img-container-1">
+								<a href="img/s-沁爽柠檬味酸奶.jpg"><img src="img/s-沁爽柠檬味酸奶.jpg" alt="Image" class="img-fluid tm-img-tn"></a>   
+								<p style="padding-right: 70%;color: red; font-weight: 800;font-family: 'Open Sans';">¥96</p>
+								<p style="text-align:left; line-height: 80%;width: 220px;"><a href="" class="dcname"><font color="#000000" style="text-decoration: none;font-size: 1rem;">【会员专享】乐纯滤乳清元气希腊酸奶沁爽柠檬6盒装 益生菌酸牛奶</font></a></p>
+								<div class="button_base b06_3d_swap-cancel ">
+       								 <div class="btn-div">取消收藏</div>
+        							<div class="btn-div">取消收藏</div>
+   								</div>  
+							</div>                                    
+						</div>
+					</section>
+						
+					<!-- Second Gallery section -->     
+					<section id="secondgallery" class="tm-section">
+						<header ><h2 class="tm-blue-text tm-welcome-title">购物车</h2><hr/></header>
+						<div id="content">
+						<div class="search" style="width: 600px;">
+        					<div class="search d7">
+								<form>
+		  							<input type="text" placeholder="搜索购物车...">
+		  							<button type="submit"></button>
+		  							<!-- <div class="button_base b06_3d_swap add btn-div-2">
+       								 	<div class="">搜索</div>
+        								<div class="">搜索</div>
+   									</div> -->
+								</form>
+							</div>
+        				</div>
+ 							<table width="100%" border="0" cellspacing="0" cellpadding="0" id="shopping">
+ 								<form action="" method="post" name="myform">
+								  <tr>
+								    <td class="title_1"><input id="allCheckBox" type="checkbox" value="" onclick="selectAll()" />全选</td>
+								    <td class="title_2" colspan="2">商品</td>
+								    <td class="title_3">单价（元）</td>
+								    <td class="title_4">数量</td>
+								    <td class="title_5">小计（元）</td>
+								    <td class="title_6">操作</td>
+								  </tr>
+								  <tr>
+								    <td colspan="8" class="line"></td>
+								  </tr>
+								   <tr id="product1">
+								    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
+								    <td class="cart_td_2"><img src="img/草莓味酸奶.jpg" alt="shopping"/></td>
+								    <td class="cart_td_3"><a href="#">草莓味滤乳清酸奶6盒装  2~6℃冷链运输健康饮品</a><br/></td>
+								    <td class="cart_td_5">48.00</td>
+								    <td class="cart_td_6"><img src="img/taobao_minus.jpg" alt="minus" onclick="changeNum('num_1','minus')" class="hand"/> <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="img/taobao_adding.jpg" alt="add" onclick="changeNum('num_1','add')"  class="hand"/></td>
+								    <td class="cart_td_7"></td>
+								    <td class="cart_td_8"><a href="javascript:deleteRow('product1');">删除</a></td>
+								    
+								  </tr>
+								   <tr id="product2">
+								    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product2" onclick="selectSingle()" /></td>
+								    <td class="cart_td_2"><img src="img/蓝莓干.jpg" alt="shopping"/></td>
+								    <td class="cart_td_3"><a href="#">天然野生无添加蓝莓干150g果干蜜饯烘</a><br /></td>
+								    <td class="cart_td_5">25.00</td>
+								    <td class="cart_td_6"><img src="img/taobao_minus.jpg" alt="minus" onclick="changeNum('num_2','minus')" class="hand"/> <input id="num_2" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="img/taobao_adding.jpg" alt="add" onclick="changeNum('num_2','add')"  class="hand"/></td>
+								    <td class="cart_td_7"></td>
+								    <td class="cart_td_8"><a href="javascript:deleteRow('product2');">删除</a></td>
+								 
+								  </tr>
+								   <tr id="product3">
+								    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product3"  onclick="selectSingle()"/></td>
+								    <td class="cart_td_2"><img src="img/芒果干.jpg" alt="shopping"/></td>
+								    <td class="cart_td_3"><a href="#">百草味休闲零食芒果片300g蜜饯果铺干酸甜水果干芒果片</a><br /></td>
+								    <td class="cart_td_5">35.00</td>
+								    <td class="cart_td_6"><img src="img/taobao_minus.jpg" alt="minus" onclick="changeNum('num_3','minus')" class="hand"/> <input id="num_3" type="text"  value="1" class="num_input" readonly="readonly"/> <img src="img/taobao_adding.jpg" alt="add" onclick="changeNum('num_3','add')"  class="hand"/></td>
+								    <td class="cart_td_7"></td>
+								    <td class="cart_td_8"><a href="javascript:deleteRow('product3');">删除</a></td>
+								  
+								  </tr>
+								   <tr id="product4">
+								    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product4" onclick="selectSingle()" /></td>
+								    <td class="cart_td_2"><img src="img/提拉米苏味酸奶.jpg" alt="shopping"/></td>
+								    <td class="cart_td_3"><a href="#">提拉米苏味滤乳清酸奶4盒装  2~6℃冷链运输健康饮品</a><br /></td>
+								    <td class="cart_td_5">50.00</td>
+								    <td class="cart_td_6"><img src="img/taobao_minus.jpg" alt="minus" onclick="changeNum('num_4','minus')" class="hand"/> <input id="num_4" type="text"  value="2" class="num_input" readonly="readonly"/> <img src="img/taobao_adding.jpg" alt="add" onclick="changeNum('num_4','add')"  class="hand"/></td>
+								    <td class="cart_td_7"></td>
+								    <td class="cart_td_8"><a href="javascript:deleteRow('product4');">删除</a></td>
+								  </tr>
+  
+								   <tr>
+								   <td  colspan="3"><a href="javascript:deleteSelectRow()">
+								  	<div class="button_base b06_3d_swap-cancel">
+       								 	<div class="btn-div">删除所选</div>
+        								<div class="btn-div">删除所选</div>
+   									</div></a>
+   									</td>
+								    <td colspan="5" class="shopend">商品总价（不含运费）：<label id="total" class="yellow"></label> 元<br />
+								    <div class="button_base b06_3d_swap-submit" style="float: right;">
+       								 	<div class="btn-div">加入订单</div>
+        								<div class="btn-div">加入订单</div>
+   									</div>
+								  </tr>
+  								</form>
+							</table>
+						</div>
+
+							<div id="more" data-status="1"><a href="#">点击加载更多</a></div>
+					</section>
+
+					<!-- Third Gallery section -->     
+					<section id="thirdgallery" class="tm-section">
+						<header><h2 class="tm-blue-text tm-welcome-title tm-margin-b-30">我的订单</h2><hr/></header>
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" id="shopping">
+ 								<form action="" method="post" name="myform">
+								  <tr>
+								    <td class="title_1"><input id="allCheckBox" type="checkbox" value="" onclick="selectAll()" />全选</td>
+
+								    <td class="title_2" colspan="2">商品</td>
+								    <td class="title_3">单价（元）</td>
+								    <td class="title_4">数量</td>
+								    <td class="title_5">小计（元）</td>
+								  	<td class="title_2">订单编号</td>
+								    <td class="title_6">操作</td>
+								  </tr>
+								  <tr>
+								    <td colspan="8" class="line"></td>
+								  </tr>
+								   <tr id="product1">
+								    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
+								    <td class="cart_td_2"><img src="img/草莓味酸奶.jpg" alt="shopping"/></td>								    
+								    <td class="cart_td_3"><a href="#">草莓味滤乳清酸奶6盒装  2~6℃冷链运输健康饮品</a><br/></td>
+								    <td class="cart_td_5">48.00</td>
+								    <td class="cart_td_6">1</td>
+								    <td class="cart_td_7">48.00</td>
+								    <td class="cart_td_2"><a href="#">DD00000000</a><br/></td>
+								    <td class="cart_td_8"><a href="javascript:deleteRow('product1');">取消<br/>订单</a></td>
+								    
+								  </tr>
+								   <tr id="product2">
+								    <td class="cart_td_1"><input name="cartCheckBox" type="checkbox" value="product2" onclick="selectSingle()" /></td>
+								    <td class="cart_td_2"><img src="img/蓝莓干.jpg" alt="shopping"/></td>								    
+								    <td class="cart_td_3"><a href="#">天然野生无添加蓝莓干150g果干蜜饯烘</a><br /></td>
+								    <td class="cart_td_5">25.00</td>
+								    <td class="cart_td_6">3</td>
+								    <td class="cart_td_7">125.00</td>
+								    <td class="cart_td_2"><a href="#">DD00000001</a><br/></td>
+								    <td class="cart_td_8"><a href="javascript:deleteRow('product2');">取消<br/>订单</a></td>
+								 
+  
+								   <tr>
+								   <td  colspan="3">
+   									</td>
+								    <td colspan="5" class="shopend"><br />
+								    <div class="button_base b06_3d_swap-submit" style="float: right;">
+       								 	<div class="btn-div">取消所选</div>
+        								<div class="btn-div">取消所选</div>
+   									</div>
+								  </tr>
+  								</form>
+							</table>
+					</section>
+					</div>
+					<footer>
+						<p class="tm-copyright-p">Copyright &copy; 2017.轻食 All rights reserved.</p>
+					</footer>
+				</div>  
+				
+			</div> <!-- Right column: content -->
+		</div>
+	</div> <!-- row -->
+</div> <!-- container -->
+		
+<!-- load JS files -->
+<script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+<script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+<script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+<script>     
+
+	$(document).ready(function(){
+
+		// Single page nav
+		$('.tm-main-nav').singlePageNav({
+			'currentClass' : "active",
+			offset : 20
+		});
+
+		// Magnific pop up
+		$('.tm-gallery-1').magnificPopup({
+		  delegate: 'a', // child items selector, by clicking on it popup will open
+		  type: 'image',
+		  gallery: {enabled:true}
+		  // other options
+		}); 
+
+		$('.tm-gallery-2').magnificPopup({
+		  delegate: 'a', // child items selector, by clicking on it popup will open
+		  type: 'image',
+		  gallery: {enabled:true}
+		  // other options
+		}); 
+
+		$('.tm-gallery-3').magnificPopup({
+		  delegate: 'a', // child items selector, by clicking on it popup will open
+		  type: 'image',
+		  gallery: {enabled:true}
+		  // other options
+		}); 
+
+		$('.tm-current-year').text(new Date().getFullYear());  
+
+		$('.add-container .show-add').click(function() {
+					$(this).css('background', 'url("img/mail_1.jpg") no-repeat').siblings('.show-add').css('background', 'url("img/mail.jpg") no-repeat')
+		})             
+	});
+</script>             
+</body>
+</html>
+

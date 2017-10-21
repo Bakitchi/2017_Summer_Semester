@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+.wrap{
+	width:1903px;
+	height:1700px;
+}
+.leftcontain{
+	width:1500px; 
+	display:inline;
+	height:1600px;
+	backgroud-color:#5EB970;
+}
+.rightcontain{
+	width:300px;
+	height: 1600px; 
+	background-color: #5EB970;
+	display: inline;
+}
+.left{
+	width:600px;
+	display:inline;
+	height:1500px;	
+}
+.mid{
+	width:800px;
+	display:inline;
+	height:1500px;
+}
